@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <Intro />
+    <Fixed />
   </div>
 </template>
 
@@ -9,11 +10,15 @@
 import Header from "@/components/Header.vue";
 import Intro from "@/components/Intro.vue";
 
+// fixed
+import Fixed from "@/components/Fixed.vue";
+
 export default {
   name: "App",
   components: {
     Header,
-    Intro
+    Intro,
+    Fixed
   }
 };
 </script>
