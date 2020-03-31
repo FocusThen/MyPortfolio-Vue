@@ -47,8 +47,8 @@
 }
 .social-links a {
   display: block;
-  color: var(--darkclr);
-  margin-top: 1.2em;
+  color: var(--lightclr);
+  margin-top: 1em;
   font-size: 1.4rem;
   transition: all 0.3s;
 }
@@ -60,7 +60,7 @@
 
 .social-links li:last-child {
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .social-links li:last-child::after {
@@ -69,7 +69,7 @@
   width: 1px;
   height: 100px;
   background: var(--darkclr);
-  bottom: -125px;
+  bottom: -110px;
   left: 50%;
 }
 </style>
