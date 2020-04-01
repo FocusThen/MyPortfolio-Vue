@@ -1,29 +1,42 @@
 <template>
   <div id="app">
-    <Header />
-    <Intro />
+    <!-- Layout & Fixed -->
     <Fixed />
+
+    <!-- Navbar -->
+    <Header />
+
+    <!-- Contents -->
+    <Intro />
+    <AboutMe />
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Intro from "@/components/Intro.vue";
+//Navbar
+import Header from "@/components/navbar/Header.vue";
 
-// fixed
-import Fixed from "@/components/Fixed.vue";
+//Content
+import Intro from "@/components/contents/Intro.vue";
+import AboutMe from "@/components/contents/AboutMe.vue";
+
+// Layout & fixed
+import Fixed from "@/components/layouts/Fixed.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Intro,
+    AboutMe,
     Fixed
   }
 };
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
+
 :root {
   --hoverclr: rgba(100, 255, 218, 0.1);
   --darkclr: #8892b0;
@@ -31,6 +44,9 @@ export default {
   --accentclr: #64ffda;
   --fullydark: #020c1b;
   --bgclr: #0a192f;
+
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Roboto Mono", monospace;
 }
 
 * {
@@ -38,11 +54,14 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: var(--bgclr);
-  widows: 90%;
-  max-width: 1440px;
+  width: 90%;
+  max-width: 1650px;
   margin: 0 auto;
 }
 a,
@@ -60,7 +79,13 @@ li {
   column-gap: 20px;
 }
 
+.numbers {
+  color: var(--accentclr);
+  margin-right: 0.5em;
+  font-family: var(--ff-secondary);
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--ff-primary);
 }
 </style>

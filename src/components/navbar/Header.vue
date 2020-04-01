@@ -28,7 +28,7 @@
     <nav class="nav">
       <ul class="nav-links">
         <li>
-          <a href="#aboutMe">
+          <a href="#aboutme">
             <span class="numbers">01.</span>
             About me
           </a>
@@ -56,11 +56,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 2em 0;
-}
-
-.numbers {
-  color: var(--accentclr);
-  margin-right: 0.5em;
 }
 
 .nav-links {

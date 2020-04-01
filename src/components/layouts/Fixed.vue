@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex">
     <div class="left-fixed">
       <ul class="social-links">
         <li>
@@ -29,15 +29,24 @@
         </li>
       </ul>
     </div>
-    <div class="right-fixed"></div>
+    <div class="right-fixed">
+      <a class="mail" href="mailto:mmucahit.tezcan@gmail.com">mmucahit.tezcan@gmail.com</a>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.left-fixed {
+.flex {
+  display: flex;
   position: fixed;
-  left: 100px;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1650px;
   bottom: 0;
+  z-index: -10;
+}
+.left-fixed {
+  left: 100px;
 }
 
 .social-links {
@@ -47,7 +56,7 @@
 }
 .social-links a {
   display: block;
-  color: var(--lightclr);
+  color: var(--darkclr);
   margin-top: 1em;
   font-size: 1.4rem;
   transition: all 0.3s;
@@ -71,5 +80,31 @@
   background: var(--darkclr);
   bottom: -110px;
   left: 50%;
+}
+
+.right-fixed {
+  right: 100px;
+  position: relative;
+}
+.mail {
+  display: inline-block;
+  position: absolute;
+  transform: rotate(90deg);
+  color: var(--darkclr);
+  margin-top: 8em;
+}
+.mail::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: var(--darkclr);
+  right: -110px;
+  bottom: 50%;
+}
+
+.mail:hover,
+.mail:focus {
+  color: var(--accentclr);
 }
 </style>
