@@ -34,7 +34,7 @@
           </a>
         </li>
         <li>
-          <a href="#myWorks">
+          <a href="#myworks">
             <span class="numbers">02.</span>
             My works
           </a>

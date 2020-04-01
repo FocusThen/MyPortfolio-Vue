@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div>
     <div class="left-fixed">
       <ul class="social-links">
         <li>
@@ -36,17 +36,10 @@
 </template>
 
 <style scoped>
-.flex {
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1650px;
-  bottom: 0;
-  z-index: 10;
-}
 .left-fixed {
   left: 100px;
+  position: fixed;
+  bottom: 0;
 }
 
 .social-links {
@@ -83,12 +76,12 @@
 }
 
 .right-fixed {
-  right: 100px;
-  position: relative;
+  right: 1.8em;
+  position: fixed;
+  bottom: 200px;
 }
 .mail {
   display: inline-block;
-  position: absolute;
   transform: rotate(90deg);
   color: var(--darkclr);
   margin-top: 8em;

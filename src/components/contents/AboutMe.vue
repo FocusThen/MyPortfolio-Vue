@@ -49,18 +49,29 @@
 }
 
 .aboutme_title {
+  position: relative;
   color: var(--lightclr);
   margin-bottom: 2em;
   font-size: 2rem;
 }
 .aboutme_title::after {
   content: "";
+  position: absolute;
+  background-color: var(--darkclr);
+  opacity: 0.5;
+  width: 60%;
+  height: 1px;
+  bottom: 45%;
+  right: -0.1em;
 }
 
 .aboutme_body {
   color: var(--darkclr);
   line-height: 1.4;
   font-size: 1.4rem;
+}
+.aboutme_body {
+  margin-bottom: 0.5em;
 }
 
 .color-accent {

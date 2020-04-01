@@ -9,6 +9,7 @@
     <!-- Contents -->
     <Intro />
     <AboutMe />
+    <MyWorks />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import Header from "@/components/navbar/Header.vue";
 //Content
 import Intro from "@/components/contents/Intro.vue";
 import AboutMe from "@/components/contents/AboutMe.vue";
+import MyWorks from "@/components/contents/MyWorks.vue";
 
 // Layout & fixed
 import Fixed from "@/components/layouts/Fixed.vue";
@@ -29,6 +31,7 @@ export default {
     Header,
     Intro,
     AboutMe,
+    MyWorks,
     Fixed
   }
 };
@@ -44,6 +47,8 @@ export default {
   --accentclr: #64ffda;
   --fullydark: #020c1b;
   --bgclr: #0a192f;
+
+  --boxclr: #172a45;
 
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Roboto Mono", monospace;
