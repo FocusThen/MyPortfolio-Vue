@@ -43,7 +43,7 @@
   width: 90%;
   max-width: 1650px;
   bottom: 0;
-  z-index: -10;
+  z-index: 10;
 }
 .left-fixed {
   left: 100px;
