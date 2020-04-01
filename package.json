@@ -22,5 +22,10 @@
     "eslint-plugin-vue": "^6.1.2",
     "prettier": "^1.19.1",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "author": {
+    "name": "M. Mücahit Tezcan",
+    "email": "mmucahit.tezcan@gmail.com"
+  },
+  "description": "My Portfolio Vue"
 }
