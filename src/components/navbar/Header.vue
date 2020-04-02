@@ -104,4 +104,10 @@
     stroke-dashoffset: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
 </style>

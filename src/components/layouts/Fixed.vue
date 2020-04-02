@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="hide">
     <div class="left-fixed">
       <ul class="social-links">
         <li>
@@ -30,9 +30,7 @@
       </ul>
     </div>
     <div class="right-fixed">
-      <a class="mail" href="mailto:mmucahit.tezcan@gmail.com"
-        >mmucahit.tezcan@gmail.com</a
-      >
+      <a class="mail" href="mailto:mmucahit.tezcan@gmail.com">mmucahit.tezcan@gmail.com</a>
     </div>
   </div>
 </template>
@@ -78,7 +76,7 @@
 }
 
 .right-fixed {
-  right: 1.8em;
+  right: 0;
   position: fixed;
   bottom: 197px;
 }
@@ -101,5 +99,24 @@
 .mail:hover,
 .mail:focus {
   color: var(--accentclr);
+}
+
+.hide {
+  display: unset;
+}
+
+@media (max-width: 1050px) {
+  .left-fixed {
+    left: 50px;
+  }
+  .right-fixed {
+    right: -50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide {
+    display: none;
+  }
 }
 </style>

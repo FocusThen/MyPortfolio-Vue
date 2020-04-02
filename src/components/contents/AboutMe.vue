@@ -29,7 +29,7 @@
         <li>Express</li>
       </ul>
     </div>
-    <img class="imageme" src="@/assets/me.png" />
+    <div class="imageme"></div>
   </section>
 </template>
 
@@ -40,8 +40,12 @@
 }
 
 .imageme {
+  background: url("../../assets/me.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
-  width: 100%;
+  width: 80%;
+  height: 50%;
   padding: 4em;
   grid-column: 6 / 8;
   justify-self: center;
@@ -62,12 +66,11 @@
   width: 60%;
   height: 1px;
   bottom: 45%;
-  right: -0.1em;
+  margin-left: 0.5em;
 }
 
 .aboutme_body {
   color: var(--darkclr);
-  line-height: 1.4;
   font-size: 1.4rem;
 }
 .aboutme_body {
@@ -93,5 +96,30 @@
 .skills li::before {
   content: "▹";
   color: var(--accentclr);
+}
+
+@media (max-width: 1440px) {
+  .imageme {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .imageme {
+    height: 30%;
+    margin-left: 3em;
+  }
+}
+@media (max-width: 768px) {
+  .aboutme {
+    grid-column: 1 / 8;
+    padding-bottom: 5em;
+  }
+  .imageme {
+    grid-column: 4 / 6;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 4em;
+  }
 }
 </style>

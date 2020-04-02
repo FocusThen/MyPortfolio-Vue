@@ -35,8 +35,19 @@
 
 .text {
   font-size: 1.2rem;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   color: var(--darkclr);
+}
+@media (max-width: 768px) {
+  #contact {
+    padding: 9em 0;
+  }
+  .contact {
+    grid-column: 2/8;
+  }
+  .text {
+    width: 100%;
+  }
 }
 </style>

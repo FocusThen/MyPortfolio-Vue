@@ -125,4 +125,21 @@ li {
 .btn:focus {
   background: var(--hoverclr);
 }
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+  .btn {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  .btn {
+    width: 45%;
+  }
+}
 </style>

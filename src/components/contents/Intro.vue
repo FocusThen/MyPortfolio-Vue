@@ -31,4 +31,10 @@
   color: var(--darkclr);
   font-size: 3rem;
 }
+
+@media (max-width: 768px) {
+  .intro {
+    grid-column: 1 / 8;
+  }
+}
 </style>
