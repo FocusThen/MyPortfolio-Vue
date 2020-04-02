@@ -1,15 +1,20 @@
 <template>
   <div id="app">
     <!-- Layout & Fixed -->
-    <Fixed />
+    <div class="body">
+      <Fixed />
 
-    <!-- Navbar -->
-    <Header />
+      <!-- Navbar -->
+      <Header />
 
-    <!-- Contents -->
-    <Intro />
-    <AboutMe />
-    <MyWorks />
+      <!-- Contents -->
+      <Intro />
+      <AboutMe />
+      <MyWorks />
+      <Contact />
+    </div>
+    <!-- Footer -->
+    <Footer />
   </div>
 </template>
 
@@ -21,9 +26,11 @@ import Header from "@/components/navbar/Header.vue";
 import Intro from "@/components/contents/Intro.vue";
 import AboutMe from "@/components/contents/AboutMe.vue";
 import MyWorks from "@/components/contents/MyWorks.vue";
+import Contact from "@/components/contents/Contact.vue";
 
 // Layout & fixed
 import Fixed from "@/components/layouts/Fixed.vue";
+import Footer from "@/components/layouts/Footer.vue";
 
 export default {
   name: "App",
@@ -32,12 +39,15 @@ export default {
     Intro,
     AboutMe,
     MyWorks,
+    Contact,
+    Footer,
     Fixed
   }
 };
 </script>
 
 <style>
+/* Globals */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
 
 :root {
@@ -62,9 +72,12 @@ export default {
 html {
   scroll-behavior: smooth;
 }
-
 body {
   background-color: var(--bgclr);
+  font-size: 16px;
+  line-height: 1.4;
+}
+.body {
   width: 90%;
   max-width: 1650px;
   margin: 0 auto;
@@ -92,5 +105,24 @@ li {
 
 #app {
   font-family: var(--ff-primary);
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  margin-top: 5em;
+  padding: 1.2em 1.5em;
+  border-radius: 5px;
+  color: var(--accentclr);
+  border: 1px solid var(--accentclr);
+  font-size: 1rem;
+  word-spacing: 0.2em;
+  transition: all 0.3s;
+}
+.btn:hover,
+.btn:focus {
+  background: var(--hoverclr);
 }
 </style>

@@ -30,7 +30,9 @@
       </ul>
     </div>
     <div class="right-fixed">
-      <a class="mail" href="mailto:mmucahit.tezcan@gmail.com">mmucahit.tezcan@gmail.com</a>
+      <a class="mail" href="mailto:mmucahit.tezcan@gmail.com"
+        >mmucahit.tezcan@gmail.com</a
+      >
     </div>
   </div>
 </template>
@@ -78,7 +80,7 @@
 .right-fixed {
   right: 1.8em;
   position: fixed;
-  bottom: 200px;
+  bottom: 197px;
 }
 .mail {
   display: inline-block;

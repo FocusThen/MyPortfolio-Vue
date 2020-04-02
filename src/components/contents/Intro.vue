@@ -5,7 +5,7 @@
       <h1 class="name">M. Mücahit Tezcan.</h1>
       <h1 class="build">I build things for the web.</h1>
 
-      <a class="btn-touch" href="mailto:mmucahit.tezcan@gmail.com">Get In Touch</a>
+      <a class="btn" href="mailto:mmucahit.tezcan@gmail.com">Get In Touch</a>
     </div>
   </section>
 </template>
@@ -30,23 +30,5 @@
 .build {
   color: var(--darkclr);
   font-size: 3rem;
-}
-
-.btn-touch {
-  display: inline-block;
-  text-align: center;
-  width: 25%;
-  margin-top: 5em;
-  padding: 1.2em 1.5em;
-  border-radius: 5px;
-  color: var(--accentclr);
-  border: 1px solid var(--accentclr);
-  font-size: 1rem;
-  word-spacing: 0.2em;
-  transition: all 0.3s;
-}
-.btn-touch:hover,
-.btn-touch:focus {
-  background: var(--hoverclr);
 }
 </style>
