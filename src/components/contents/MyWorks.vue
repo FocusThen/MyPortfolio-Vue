@@ -147,4 +147,21 @@ export default {
     grid-column: 1/6;
   }
 }
+@media (max-width: 710px) {
+  .box-grid {
+    grid-column: 1/9;
+  }
+  .mywork_title {
+    grid-column: 1/9;
+  }
+  .mywork_title::after {
+    width: 10%;
+  }
+}
+
+@media (max-width: 425px) {
+  .mywork_title::after {
+    display: none;
+  }
+}
 </style>

@@ -116,10 +116,31 @@
     padding-bottom: 5em;
   }
   .imageme {
-    grid-column: 4 / 6;
-    height: 250px;
-    width: 100%;
+    grid-column: 3 / 7;
+    height: 400px;
+    max-width: 100%;
+    background-size: contain;
     margin-bottom: 4em;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutme {
+    grid-column: 1/9;
+  }
+  .aboutme_title::after {
+    width: 30%;
+  }
+  .imageme {
+    height: 300px;
+    max-width: 100%;
+    grid-column: 3/7;
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutme_title::after {
+    display: none;
   }
 }
 </style>

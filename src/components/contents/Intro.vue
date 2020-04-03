@@ -37,4 +37,9 @@
     grid-column: 1 / 8;
   }
 }
+@media (max-width: 375px) {
+  .intro {
+    grid-column: 1 / 9;
+  }
+}
 </style>

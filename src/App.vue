@@ -142,4 +142,9 @@ li {
     width: 45%;
   }
 }
+@media (max-width: 375px) {
+  .btn {
+    width: 100%;
+  }
+}
 </style>
