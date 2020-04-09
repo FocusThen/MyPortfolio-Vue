@@ -15,7 +15,7 @@
         <span class="color-accent">Istanbul Arel University</span>
         , I worked more on
         <span class="color-accent">JavaScript</span> and i watched a lot front
-        end courses form Scrimba, Frontend Masters ... and more. I am keep
+        end courses form Scrimba, Frontend Masters ... and more. I'm still
         learning
       </p>
 
