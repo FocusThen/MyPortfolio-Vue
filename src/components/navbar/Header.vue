@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header ref="header" class="header">
     <a class="logo-link" href="/">
       <svg
         id="logo"
@@ -76,7 +76,8 @@
 export default {
   data: () => {
     return {
-      navbarOpen: false
+      navbarOpen: false,
+      prevScrollpos: 0
     };
   },
   methods: {
@@ -88,17 +89,45 @@ export default {
         : navbar.add("open-nav");
 
       ham.contains("ham-open") ? ham.remove("ham-open") : ham.add("ham-open");
+    },
+    handleScroll() {
+      let currentScrollPos = window.pageYOffset;
+      let headerRef = this.$refs.header;
+      if (this.prevScrollpos > currentScrollPos) {
+        headerRef.style.top = "0";
+        headerRef.classList.add("addingShadow");
+      } else {
+        headerRef.style.top = "-10em";
+      }
+      this.prevScrollpos = currentScrollPos;
     }
+  },
+  created() {
+    this.prevScrollpos = window.pageYOffset;
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
   }
 };
 </script>
 
 <style scoped>
 .header {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  max-width: 1650px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
   padding: 2em 0;
+  transition: all 0.3s;
+}
+
+.addingShadow {
+  background: var(--bgclr);
 }
 
 .nav-links {

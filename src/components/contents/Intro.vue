@@ -14,6 +14,7 @@
 .intro {
   color: var(--lightclr);
   padding: 10em 0;
+  margin-top: 9.7em;
   grid-column: 2 / 6;
 }
 .hi {
@@ -34,6 +35,7 @@
 
 @media (max-width: 768px) {
   .intro {
+    margin-top: 10em;
     grid-column: 1 / 8;
   }
 }
