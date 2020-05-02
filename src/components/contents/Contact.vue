@@ -1,6 +1,6 @@
 <template>
   <section class="grid" id="contact">
-    <div class="contact">
+    <div v-scrollanimation class="contact">
       <h2 class="whats">03. What's Next?</h2>
       <h1 class="touch">Get In Touch</h1>
       <p class="text">

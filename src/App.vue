@@ -10,6 +10,7 @@
       <!-- Contents -->
       <Intro />
       <AboutMe />
+      <!-- <BuildByMe /> -->
       <MyWorks />
       <Contact />
     </div>
@@ -27,6 +28,7 @@ import Intro from "@/components/contents/Intro.vue";
 import AboutMe from "@/components/contents/AboutMe.vue";
 import MyWorks from "@/components/contents/MyWorks.vue";
 import Contact from "@/components/contents/Contact.vue";
+// import BuildByMe from "@/components/contents/BuildByMe.vue";
 
 // Layout & fixed
 import Fixed from "@/components/layouts/Fixed.vue";
@@ -38,6 +40,7 @@ export default {
     Header,
     Intro,
     AboutMe,
+    // BuildByMe,
     MyWorks,
     Contact,
     Footer,
@@ -146,5 +149,18 @@ li {
   .btn {
     width: 100%;
   }
+}
+
+/* Scroll Animations */
+
+.before-enter {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-out;
+}
+
+.enter {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>

@@ -1,16 +1,16 @@
 <template>
   <section id="aboutme" class="grid">
     <div class="aboutme">
-      <h1 class="aboutme_title">
+      <h1 v-scrollanimation class="aboutme_title">
         <span class="numbers">01.</span>
         About Me
       </h1>
 
-      <p class="aboutme_body">
+      <p v-scrollanimation class="aboutme_body">
         Hello! I'm Mücahit, a software developer based in Istanbul, I develop
         websites, bots and web apps.
       </p>
-      <p class="aboutme_body">
+      <p v-scrollanimation class="aboutme_body">
         Shortly after graduating from
         <span class="color-accent">Istanbul Arel University</span>
         , I worked more on
@@ -19,7 +19,7 @@
         learning
       </p>
 
-      <ul class="skills">
+      <ul v-scrollanimation class="skills">
         <li>JavaScript (ES6+)</li>
         <li>Vue</li>
         <li>React</li>
@@ -29,7 +29,7 @@
         <li>Express</li>
       </ul>
     </div>
-    <div class="imageme"></div>
+    <div v-scrollanimation class="imageme"></div>
   </section>
 </template>
 
