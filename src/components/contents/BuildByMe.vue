@@ -36,11 +36,6 @@ section {
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
 }
-/* 
-img {
-  width: 100%;
-} */
-
 .left-side {
   grid-column: 1/3;
 }

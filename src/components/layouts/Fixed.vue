@@ -18,7 +18,7 @@
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/wchttzcn/">
+          <a href="https://www.instagram.com/FocusThen/">
             <i class="ri-instagram-line"></i>
           </a>
         </li>
