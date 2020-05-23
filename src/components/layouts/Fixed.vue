@@ -18,12 +18,12 @@
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/FocusThen/">
+          <a href="https://www.instagram.com/wchttzcn/">
             <i class="ri-instagram-line"></i>
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/Wchttzcn">
+          <a href="https://twitter.com/FocusThen">
             <i class="ri-twitter-fill"></i>
           </a>
         </li>
