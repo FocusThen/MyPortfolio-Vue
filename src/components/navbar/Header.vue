@@ -1,74 +1,76 @@
 <template>
   <header ref="header" class="header">
-    <a class="logo-link" href="/">
+    <div class="subHeader">
+      <a class="logo-link" href="/">
+        <svg
+          id="logo"
+          class="logo"
+          width="101"
+          height="99"
+          viewBox="0 0 101 99"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="textM"
+            d="M41.6362 36.4394L50.0034 57.3222L58.3706 36.4394H62.7476V62.0331H59.3726V52.0663L59.689 41.3085L51.2866 62.0331H48.7026L40.3179 41.3613L40.6519 52.0663V62.0331H37.2769V36.4394H41.6362Z"
+            stroke="#64FFDA"
+            stroke-width="1"
+          />
+
+          <path
+            class="circle"
+            d="M98.7825 49.6381C98.7825 76.0248 77.0286 97.4576 50.1413 97.4576C23.254 97.4576 1.5 76.0248 1.5 49.6381C1.5 23.2513 23.254 1.81851 50.1413 1.81851C77.0286 1.81851 98.7825 23.2513 98.7825 49.6381Z"
+            stroke="#64FFDA"
+            stroke-width="3"
+          />
+        </svg>
+      </a>
       <svg
-        id="logo"
-        class="logo"
-        width="101"
-        height="99"
-        viewBox="0 0 101 99"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+        ref="ham"
+        @click="openNav"
+        class="ham ham6"
+        viewBox="0 0 100 100"
+        width="80"
+        onclick="this.classList.toggle('active')"
       >
         <path
-          class="textM"
-          d="M41.6362 36.4394L50.0034 57.3222L58.3706 36.4394H62.7476V62.0331H59.3726V52.0663L59.689 41.3085L51.2866 62.0331H48.7026L40.3179 41.3613L40.6519 52.0663V62.0331H37.2769V36.4394H41.6362Z"
-          stroke="#64FFDA"
-          stroke-width="1"
+          class="line top"
+          d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"
         />
-
         <path
-          class="circle"
-          d="M98.7825 49.6381C98.7825 76.0248 77.0286 97.4576 50.1413 97.4576C23.254 97.4576 1.5 76.0248 1.5 49.6381C1.5 23.2513 23.254 1.81851 50.1413 1.81851C77.0286 1.81851 98.7825 23.2513 98.7825 49.6381Z"
-          stroke="#64FFDA"
-          stroke-width="3"
+          class="line middle"
+          d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272"
+        />
+        <path
+          class="line bottom"
+          d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272"
         />
       </svg>
-    </a>
-    <svg
-      ref="ham"
-      @click="openNav"
-      class="ham ham6"
-      viewBox="0 0 100 100"
-      width="80"
-      onclick="this.classList.toggle('active')"
-    >
-      <path
-        class="line top"
-        d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"
-      />
-      <path
-        class="line middle"
-        d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272"
-      />
-      <path
-        class="line bottom"
-        d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272"
-      />
-    </svg>
 
-    <nav ref="nav" class="nav">
-      <ul class="nav-links">
-        <li>
-          <a href="#aboutme">
-            <span class="numbers">01.</span>
-            About me
-          </a>
-        </li>
-        <li>
-          <a href="#myworks">
-            <span class="numbers">02.</span>
-            My works
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            <span class="numbers">03.</span>
-            Contact Me
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <nav ref="nav" class="nav">
+        <ul class="nav-links">
+          <li>
+            <a @click="openNav" href="#aboutme">
+              <span class="numbers">01.</span>
+              About me
+            </a>
+          </li>
+          <li>
+            <a @click="openNav" href="#myworks">
+              <span class="numbers">02.</span>
+              My works
+            </a>
+          </li>
+          <li>
+            <a @click="openNav" href="#contact">
+              <span class="numbers">03.</span>
+              Contact Me
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 </template>
 
@@ -82,13 +84,17 @@ export default {
   },
   methods: {
     openNav() {
-      const navbar = this.$refs.nav.classList;
-      const ham = this.$refs.ham.classList;
-      navbar.contains("open-nav")
-        ? navbar.remove("open-nav")
-        : navbar.add("open-nav");
+      if (window.screen.width <= 768) {
+        const navbar = this.$refs.nav.classList;
+        const ham = this.$refs.ham.classList;
+        navbar.contains("open-nav")
+          ? navbar.remove("open-nav")
+          : navbar.add("open-nav");
 
-      ham.contains("ham-open") ? ham.remove("ham-open") : ham.add("ham-open");
+        ham.contains("ham-open")
+          ? ham.remove("ham-open", "active")
+          : ham.add("ham-open", "active");
+      }
     },
     handleScroll() {
       let currentScrollPos = window.pageYOffset;
@@ -96,8 +102,12 @@ export default {
       if (this.prevScrollpos > currentScrollPos) {
         headerRef.style.top = "0";
         headerRef.classList.add("addingShadow");
+        if (window.pageYOffset == 0) {
+          headerRef.classList.remove("addingShadow");
+        }
       } else {
         headerRef.style.top = "-10em";
+        headerRef.classList.remove("addingShadow");
       }
       this.prevScrollpos = currentScrollPos;
     }
@@ -116,18 +126,27 @@ export default {
 .header {
   position: fixed;
   top: 0;
-  width: 90%;
-  max-width: 1650px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
   z-index: 10;
   padding: 2em 0;
   transition: all 0.3s;
 }
+.subHeader {
+  width: 90%;
+  max-width: 1650px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .addingShadow {
   background: var(--bgclr);
+  font-size: 0.9rem;
+  padding: 1em;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.12);
 }
 
 .nav-links {
@@ -164,6 +183,8 @@ export default {
 
 /* SVG animation */
 .ham {
+  position: fixed;
+  top: 0;
   display: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
