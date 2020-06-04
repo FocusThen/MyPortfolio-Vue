@@ -5,9 +5,7 @@ Vue.use(vueSmoothScroll);
 
 import VueMeta from "vue-meta";
 
-Vue.use(VueMeta, {
-  refreshOnceOnNavigation: true,
-});
+Vue.use(VueMeta);
 // animation
 import ScrollAnimation from "./components/animation/scrollAnimation";
 

@@ -34,8 +34,14 @@ import Contact from "@/components/contents/Contact.vue";
 import Fixed from "@/components/layouts/Fixed.vue";
 import Footer from "@/components/layouts/Footer.vue";
 
+let ROOT_PATH = "https://focusthen.tech/";
 export default {
   name: "App",
+  data() {
+    return {
+      logo: ROOT_PATH + require("./assets/twitter_image.PNG")
+    };
+  },
   components: {
     Header,
     Intro,
@@ -49,8 +55,7 @@ export default {
   metaInfo() {
     return {
       meta: [
-        { httpEquiv: "content-type", content: "text/html; charset=utf-8" },
-        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:card", content: "summary" },
         { name: "twitter:url", content: "https://focusthen.tech/" },
         {
           name: "twitter:title",
@@ -66,7 +71,7 @@ export default {
           name: "twitter:image:alt",
           content: "M. Mücahit Tezcan | Frontend Developer"
         },
-        { name: "twitter:image", content: "@/assets/twitter_image.PNG" },
+        { name: "twitter:image", content: this.logo },
         {
           property: "og:title",
           content: "M. Mücahit Tezcan | Frontend Developer"
@@ -76,7 +81,7 @@ export default {
           content: "M. Mücahit Tezcan | Frontend Developer"
         },
         { property: "og:type", content: "website" },
-        { property: "og:url", content: "https://focusthen.tech/" },
+        { property: "og:url", content: this.logo },
         { property: "og:image", content: "@/assets/twitter_image.PNG" },
         {
           property: "og:description",
