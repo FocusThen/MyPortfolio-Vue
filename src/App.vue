@@ -34,12 +34,13 @@ import Contact from "@/components/contents/Contact.vue";
 import Fixed from "@/components/layouts/Fixed.vue";
 import Footer from "@/components/layouts/Footer.vue";
 
-let ROOT_PATH = "https://focusthen.tech/";
+let ROOT_PATH = "https://focusthen.tech";
+import logos from "@/assets/twitter_image.png";
 export default {
   name: "App",
   data() {
     return {
-      logo: ROOT_PATH + require("./assets/twitter_image.PNG")
+      logo: ROOT_PATH + logos
     };
   },
   components: {
