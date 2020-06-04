@@ -45,6 +45,45 @@ export default {
     Contact,
     Footer,
     Fixed
+  },
+  metaInfo() {
+    return {
+      meta: [
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:url", content: "https://focusthen.tech/" },
+        {
+          name: "twitter:title",
+          content: "M. Mücahit Tezcan | Frontend Developer"
+        },
+        { name: "twitter:creator", content: "@Focusthen" },
+        {
+          name: "twitter:description",
+          content:
+            "Hi, my name is M. Mücahit Tezcan.I build things for the web."
+        },
+        {
+          name: "twitter:image:alt",
+          content: "M. Mücahit Tezcan | Frontend Developer"
+        },
+        { name: "twitter:image", content: "@/assets/twitter_image.PNG" },
+        {
+          property: "og:title",
+          content: "M. Mücahit Tezcan | Frontend Developer"
+        },
+        {
+          property: "og:site_name",
+          content: "M. Mücahit Tezcan | Frontend Developer"
+        },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: "https://focusthen.tech/" },
+        { property: "og:image", content: "@/assets/twitter_image.PNG" },
+        {
+          property: "og:description",
+          content:
+            "Hi, my name is M. Mücahit Tezcan.I build things for the web."
+        }
+      ]
+    };
   }
 };
 </script>
@@ -71,9 +110,6 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
 }
 body {
   background-color: var(--bgclr);

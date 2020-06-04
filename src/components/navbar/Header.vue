@@ -51,19 +51,19 @@
       <nav ref="nav" class="nav">
         <ul class="nav-links">
           <li>
-            <a @click="openNav" href="#aboutme">
+            <a @click="openNav" href="#aboutme" v-smooth-scroll>
               <span class="numbers">01.</span>
               About me
             </a>
           </li>
           <li>
-            <a @click="openNav" href="#myworks">
+            <a @click="openNav" href="#myworks" v-smooth-scroll>
               <span class="numbers">02.</span>
               My works
             </a>
           </li>
           <li>
-            <a @click="openNav" href="#contact">
+            <a @click="openNav" href="#contact" v-smooth-scroll>
               <span class="numbers">03.</span>
               Contact Me
             </a>
