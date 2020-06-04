@@ -40,7 +40,7 @@ export default {
   name: "App",
   data() {
     return {
-      logo: ROOT_PATH + logos
+      logo: ROOT_PATH + logos,
     };
   },
   components: {
@@ -51,35 +51,35 @@ export default {
     MyWorks,
     Contact,
     Footer,
-    Fixed
+    Fixed,
   },
   metaInfo() {
     return {
       meta: [
-        { name: "twitter:card", content: "summary" },
+        { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:url", content: "https://focusthen.tech/" },
         {
           name: "twitter:title",
-          content: "M. Mücahit Tezcan | Frontend Developer"
+          content: "M. Mücahit Tezcan | Frontend Developer",
         },
         { name: "twitter:creator", content: "@Focusthen" },
         {
           name: "twitter:description",
           content:
-            "Hi, my name is M. Mücahit Tezcan.I build things for the web."
+            "Hi, my name is M. Mücahit Tezcan.I build things for the web.",
         },
         {
           name: "twitter:image:alt",
-          content: "M. Mücahit Tezcan | Frontend Developer"
+          content: "M. Mücahit Tezcan | Frontend Developer",
         },
         { name: "twitter:image", content: this.logo },
         {
           property: "og:title",
-          content: "M. Mücahit Tezcan | Frontend Developer"
+          content: "M. Mücahit Tezcan | Frontend Developer",
         },
         {
           property: "og:site_name",
-          content: "M. Mücahit Tezcan | Frontend Developer"
+          content: "M. Mücahit Tezcan | Frontend Developer",
         },
         { property: "og:type", content: "website" },
         { property: "og:url", content: this.logo },
@@ -87,11 +87,11 @@ export default {
         {
           property: "og:description",
           content:
-            "Hi, my name is M. Mücahit Tezcan.I build things for the web."
-        }
-      ]
+            "Hi, my name is M. Mücahit Tezcan.I build things for the web.",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
