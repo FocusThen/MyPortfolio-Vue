@@ -49,6 +49,7 @@ export default {
   metaInfo() {
     return {
       meta: [
+        { httpEquiv: "content-type", content: "text/html; charset=utf-8" },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:url", content: "https://focusthen.tech/" },
         {
