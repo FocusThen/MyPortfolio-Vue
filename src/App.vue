@@ -34,12 +34,12 @@ import Contact from "@/components/contents/Contact.vue";
 import Fixed from "@/components/layouts/Fixed.vue";
 import Footer from "@/components/layouts/Footer.vue";
 
-let ROOT_PATH = "https://focusthen.tech";
 export default {
   name: "App",
   data() {
     return {
-      logo: ROOT_PATH + "@/assets/twitter_image.png"
+      logo:
+        "https://user-images.githubusercontent.com/47830409/83949964-caf1e080-a82f-11ea-86ea-52026fcafbab.png"
     };
   },
   components: {
