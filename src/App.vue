@@ -81,8 +81,8 @@ export default {
           content: "M. Mücahit Tezcan | Frontend Developer"
         },
         { property: "og:type", content: "website" },
-        { property: "og:url", content: this.logo },
-        { property: "og:image", content: "@/assets/twitter_image.PNG" },
+        { property: "og:url", content: "https://focusthen.tech/" },
+        { property: "og:image", content: this.logo },
         {
           property: "og:description",
           content:
