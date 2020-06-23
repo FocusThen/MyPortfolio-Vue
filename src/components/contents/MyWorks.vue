@@ -39,31 +39,36 @@
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
-      repo: ""
-    };
+      repo: '',
+    }
   },
-  created: function() {
-    this.getRepos();
+  computed: {
+    sliceRepo() {
+      return this.repo.slice(0, 8)
+    },
+  },
+  created: function () {
+    this.getRepos()
   },
   methods: {
-    getRepos: async function() {
+    getRepos: async function () {
       const responsive = await fetch(
-        "https://api.github.com/users/FocusThen/repos?visibility=public&sort=created&per_page=100"
-      );
-      const repos = await responsive.json();
-      const data = repos.map(details => {
+        'https://api.github.com/users/FocusThen/repos?visibility=public&sort=created&per_page=100'
+      )
+      const repos = await responsive.json()
+      const data = repos.map((details) => {
         return {
           name: details.name,
           description: details.description,
-          url: details.html_url
-        };
-      });
-      this.repo = data;
-    }
-  }
-};
+          url: details.html_url,
+        }
+      })
+      this.repo = data
+    },
+  },
+}
 </script>
 
 <style scoped>
@@ -78,7 +83,7 @@ export default {
   font-size: 2rem;
 }
 .mywork_title::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--darkclr);
   opacity: 0.5;
