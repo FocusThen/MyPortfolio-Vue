@@ -4,27 +4,27 @@
       <ul class="social-links">
         <li>
           <a href="https://github.com/FocusThen">
-            <i class="ri-github-fill"></i>
+            <font-awesome-icon :icon="['fab', 'github']" />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/m-m%C3%BCcahit-tezcan/">
-            <i class="ri-linkedin-fill"></i>
+            <font-awesome-icon :icon="['fab', 'linkedin-in']" />
           </a>
         </li>
         <li>
           <a href="https://codepen.io/focusthen">
-            <i class="ri-codepen-fill"></i>
+            <font-awesome-icon :icon="['fab', 'codepen']" />
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/wchttzcn/">
-            <i class="ri-instagram-line"></i>
+            <font-awesome-icon :icon="['fab', 'instagram']" />
           </a>
         </li>
         <li>
           <a href="https://twitter.com/FocusThen">
-            <i class="ri-twitter-fill"></i>
+            <font-awesome-icon :icon="['fab', 'twitter']" />
           </a>
         </li>
       </ul>
@@ -53,7 +53,7 @@
   display: block;
   color: var(--darkclr);
   margin-top: 1em;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   transition: all 0.3s;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .social-links li:last-child::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 1px;
   height: 100px;
@@ -89,7 +89,7 @@
   margin-top: 8em;
 }
 .mail::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 1px;

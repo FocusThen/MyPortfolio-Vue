@@ -96,7 +96,7 @@ export default {
 
 <style>
 /* Globals */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap');
 
 :root {
   --hoverclr: rgba(100, 255, 218, 0.1);
@@ -108,8 +108,8 @@ export default {
 
   --boxclr: #172a45;
 
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Roboto Mono", monospace;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Roboto Mono', monospace;
 }
 
 * {

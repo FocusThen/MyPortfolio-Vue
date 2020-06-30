@@ -20,7 +20,7 @@
           </svg>
 
           <a class="link" :href="item.url">
-            <i class="ri-github-fill"></i>
+            <font-awesome-icon :icon="['fab', 'github']" />
           </a>
         </div>
 
@@ -144,7 +144,7 @@ export default {
 }
 .link {
   color: var(--darkclr);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   transition: all 0.3s;
 }
 .link:hover,
