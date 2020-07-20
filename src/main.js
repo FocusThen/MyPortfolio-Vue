@@ -22,6 +22,16 @@ Vue.use(vueSmoothScroll)
 import VueMeta from 'vue-meta'
 Vue.use(VueMeta)
 
+// Google analitics
+import VueAnalytics from 'vue-analytics'
+Vue.use(VueAnalytics, {
+  id: ['UA-172948733-1'],
+  autoTracking: {
+    screenview: true,
+  },
+  checkDuplicatedScript: true,
+})
+
 // animation
 import ScrollAnimation from './components/animation/scrollAnimation'
 
