@@ -40,7 +40,7 @@
 }
 
 .imageme {
-  background: url("../../assets/me.png");
+  background: url('../../assets/me.png');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -59,7 +59,7 @@
   font-size: 2rem;
 }
 .aboutme_title::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--darkclr);
   opacity: 0.5;
@@ -94,7 +94,7 @@
 }
 
 .skills li::before {
-  content: "▹";
+  content: '▹';
   color: var(--accentclr);
 }
 

@@ -21,26 +21,26 @@
 
 <script>
 //Navbar
-import Header from "@/components/navbar/Header.vue";
+import Header from '@/components/navbar/Header.vue'
 
 //Content
-import Intro from "@/components/contents/Intro.vue";
-import AboutMe from "@/components/contents/AboutMe.vue";
-import MyWorks from "@/components/contents/MyWorks.vue";
-import Contact from "@/components/contents/Contact.vue";
+import Intro from '@/components/contents/Intro.vue'
+import AboutMe from '@/components/contents/AboutMe.vue'
+import MyWorks from '@/components/contents/MyWorks.vue'
+import Contact from '@/components/contents/Contact.vue'
 // import BuildByMe from "@/components/contents/BuildByMe.vue";
 
 // Layout & fixed
-import Fixed from "@/components/layouts/Fixed.vue";
-import Footer from "@/components/layouts/Footer.vue";
+import Fixed from '@/components/layouts/Fixed.vue'
+import Footer from '@/components/layouts/Footer.vue'
 
 export default {
-  name: "App",
+  name: 'App',
   data() {
     return {
       logo:
-        "https://user-images.githubusercontent.com/47830409/83949964-caf1e080-a82f-11ea-86ea-52026fcafbab.png"
-    };
+        'https://user-images.githubusercontent.com/47830409/83949964-caf1e080-a82f-11ea-86ea-52026fcafbab.png',
+    }
   },
   components: {
     Header,
@@ -50,48 +50,48 @@ export default {
     MyWorks,
     Contact,
     Footer,
-    Fixed
+    Fixed,
   },
   metaInfo() {
     return {
       meta: [
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:url", content: "https://focusthen.tech/" },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:url', content: 'https://focusthen.tech/' },
         {
-          name: "twitter:title",
-          content: "M. Mücahit Tezcan | Frontend Developer"
+          name: 'twitter:title',
+          content: 'M. Mücahit Tezcan | Frontend Developer',
         },
-        { name: "twitter:creator", content: "@Focusthen" },
+        { name: 'twitter:creator', content: '@Focusthen' },
         {
-          name: "twitter:description",
+          name: 'twitter:description',
           content:
-            "Hi, my name is M. Mücahit Tezcan.I build things for the web."
+            'Hi, my name is M. Mücahit Tezcan.I build things for the web.',
         },
         {
-          name: "twitter:image:alt",
-          content: "M. Mücahit Tezcan | Frontend Developer"
+          name: 'twitter:image:alt',
+          content: 'M. Mücahit Tezcan | Frontend Developer',
         },
-        { name: "twitter:image", content: this.logo },
+        { name: 'twitter:image', content: this.logo },
         {
-          property: "og:title",
-          content: "M. Mücahit Tezcan | Frontend Developer"
+          property: 'og:title',
+          content: 'M. Mücahit Tezcan | Frontend Developer',
         },
         {
-          property: "og:site_name",
-          content: "M. Mücahit Tezcan | Frontend Developer"
+          property: 'og:site_name',
+          content: 'M. Mücahit Tezcan | Frontend Developer',
         },
-        { property: "og:type", content: "website" },
-        { property: "og:url", content: "https://focusthen.tech/" },
-        { property: "og:image", content: this.logo },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://focusthen.tech/' },
+        { property: 'og:image', content: this.logo },
         {
-          property: "og:description",
+          property: 'og:description',
           content:
-            "Hi, my name is M. Mücahit Tezcan.I build things for the web."
-        }
-      ]
-    };
-  }
-};
+            'Hi, my name is M. Mücahit Tezcan.I build things for the web.',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style>

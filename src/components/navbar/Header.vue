@@ -79,47 +79,47 @@ export default {
   data: () => {
     return {
       navbarOpen: false,
-      prevScrollpos: 0
-    };
+      prevScrollpos: 0,
+    }
   },
   methods: {
     openNav() {
       if (window.screen.width <= 768) {
-        const navbar = this.$refs.nav.classList;
-        const ham = this.$refs.ham.classList;
-        navbar.contains("open-nav")
-          ? navbar.remove("open-nav")
-          : navbar.add("open-nav");
+        const navbar = this.$refs.nav.classList
+        const ham = this.$refs.ham.classList
+        navbar.contains('open-nav')
+          ? navbar.remove('open-nav')
+          : navbar.add('open-nav')
 
-        ham.contains("ham-open")
-          ? ham.remove("ham-open", "active")
-          : ham.add("ham-open", "active");
+        ham.contains('ham-open')
+          ? ham.remove('ham-open', 'active')
+          : ham.add('ham-open', 'active')
       }
     },
     handleScroll() {
-      let currentScrollPos = window.pageYOffset;
-      let headerRef = this.$refs.header;
+      let currentScrollPos = window.pageYOffset
+      let headerRef = this.$refs.header
       if (this.prevScrollpos > currentScrollPos) {
-        headerRef.style.top = "0";
-        headerRef.classList.add("addingShadow");
+        headerRef.style.top = '0'
+        headerRef.classList.add('addingShadow')
         if (window.pageYOffset == 0) {
-          headerRef.classList.remove("addingShadow");
+          headerRef.classList.remove('addingShadow')
         }
       } else {
-        headerRef.style.top = "-10em";
-        headerRef.classList.remove("addingShadow");
+        headerRef.style.top = '-10em'
+        headerRef.classList.remove('addingShadow')
       }
-      this.prevScrollpos = currentScrollPos;
-    }
+      this.prevScrollpos = currentScrollPos
+    },
   },
   created() {
-    this.prevScrollpos = window.pageYOffset;
-    window.addEventListener("scroll", this.handleScroll);
+    this.prevScrollpos = window.pageYOffset
+    window.addEventListener('scroll', this.handleScroll)
   },
   destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-};
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+}
 </script>
 
 <style scoped>
