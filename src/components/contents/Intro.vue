@@ -1,5 +1,5 @@
 <template>
-  <section class="grid">
+  <section class="flex">
     <div class="intro">
       <h2 class="hi">Hi, my name is</h2>
       <h1 class="name">M. Mücahit Tezcan.</h1>
@@ -13,9 +13,9 @@
 <style scoped>
 .intro {
   color: var(--lightclr);
+  width: 65%;
   padding: 10em 0;
   margin-top: 9.7em;
-  grid-column: 2 / 6;
 }
 .hi {
   color: var(--accentclr);
@@ -35,13 +35,13 @@
 
 @media (max-width: 768px) {
   .intro {
-    margin-top: 10em;
-    grid-column: 1 / 8;
+    width: 90%;
   }
 }
-@media (max-width: 375px) {
+
+@media (max-width: 768px) {
   .intro {
-    grid-column: 1 / 9;
+    margin-top: 10em;
   }
 }
 </style>

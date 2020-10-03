@@ -1,55 +1,64 @@
 <template>
-  <section id="aboutme" class="grid">
-    <div class="aboutme">
-      <h1 v-scrollanimation class="aboutme_title">
-        <span class="numbers">01.</span>
-        About Me
-      </h1>
+  <section id="aboutme" class="flex">
+    <div class="flex-row">
+      <div class="aboutme">
+        <h1 v-scrollanimation class="aboutme_title">
+          <span class="numbers">01.</span>
+          About Me
+        </h1>
 
-      <p v-scrollanimation class="aboutme_body">
-        Hello! I'm Mücahit, a software developer based in Istanbul, I develop
-        websites, bots and web apps.
-      </p>
-      <p v-scrollanimation class="aboutme_body">
-        Shortly after graduating from
-        <span class="color-accent">Istanbul Arel University</span>
-        , I worked more on
-        <span class="color-accent">JavaScript</span> and i watched a lot front
-        end courses form Scrimba, Frontend Masters ... and more. I'm still
-        learning
-      </p>
+        <p v-scrollanimation class="aboutme_body">
+          Hello! I'm Mücahit, a software developer based in Istanbul, I develop
+          websites, bots and web apps.
+        </p>
+        <p v-scrollanimation class="aboutme_body">
+          Shortly after graduating from
+          <span class="color-accent">Istanbul Arel University</span>
+          , I worked more on
+          <span class="color-accent">JavaScript</span> and i watched a lot front
+          end courses form Scrimba, Frontend Masters ... and more. I'm still
+          learning
+        </p>
 
-      <ul v-scrollanimation class="skills">
-        <li>JavaScript (ES6+)</li>
-        <li>Vue</li>
-        <li>React</li>
-        <li>Node.JS</li>
-        <li>HTML & (S)CSS</li>
-        <li>GraphQL</li>
-        <li>Express</li>
-      </ul>
+        <ul v-scrollanimation class="skills">
+          <li>JavaScript (ES6+)</li>
+          <li>Vue</li>
+          <li>React</li>
+          <li>Node.JS</li>
+          <li>HTML & (S)CSS</li>
+          <li>GraphQL</li>
+          <li>Express</li>
+        </ul>
+      </div>
+      <div v-scrollanimation class="imageme">
+        <img src="../../assets/me.png" alt="thats me!" />
+      </div>
     </div>
-    <div v-scrollanimation class="imageme"></div>
   </section>
 </template>
 
 <style scoped>
 .aboutme {
   padding: 16em 0;
-  grid-column: 2 / 5;
+  width: 50%;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img {
+  width: 50%;
+  height: auto;
 }
 
 .imageme {
-  background: url('../../assets/me.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   position: relative;
-  width: 80%;
-  height: 50%;
-  padding: 4em;
-  grid-column: 6 / 8;
-  justify-self: center;
-  align-self: center;
+  width: 40%;
 }
 
 .aboutme_title {
@@ -100,45 +109,26 @@
 
 @media (max-width: 1440px) {
   .imageme {
-    width: 100%;
+    width: 50%;
   }
 }
 
-@media (max-width: 1050px) {
-  .imageme {
-    height: 30%;
-    margin-left: 3em;
-  }
-}
 @media (max-width: 768px) {
   .aboutme {
-    grid-column: 1 / 8;
     padding-bottom: 5em;
+    width: 90%;
+  }
+  .flex-row {
+    flex-direction: column;
   }
   .imageme {
-    grid-column: 3 / 7;
-    height: 400px;
-    max-width: 100%;
-    background-size: contain;
+    justify-content: center;
+    width: 100%;
     margin-bottom: 4em;
   }
 }
 
 @media (max-width: 575px) {
-  .aboutme {
-    grid-column: 1/9;
-  }
-  .aboutme_title::after {
-    width: 30%;
-  }
-  .imageme {
-    height: 300px;
-    max-width: 100%;
-    grid-column: 3/7;
-  }
-}
-
-@media (max-width: 320px) {
   .aboutme_title::after {
     display: none;
   }

@@ -1,5 +1,5 @@
 <template>
-  <section class="grid" id="contact">
+  <section class="flex flex-center" id="contact">
     <div v-scrollanimation class="contact">
       <h2 class="whats">03. What's Next?</h2>
       <h1 class="touch">Get In Touch</h1>
@@ -17,9 +17,18 @@
 #contact {
   padding: 16em 0;
 }
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
 .contact {
-  grid-column: 3/7;
   text-align: center;
+  width: 65%;
+}
+@media (max-width: 768px) {
+  .contact {
+    width: 90%;
+  }
 }
 .whats {
   font-size: 1.2rem;
@@ -43,9 +52,7 @@
   #contact {
     padding: 9em 0;
   }
-  .contact {
-    grid-column: 2/8;
-  }
+
   .text {
     width: 100%;
   }

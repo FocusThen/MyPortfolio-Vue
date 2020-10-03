@@ -1,11 +1,11 @@
 <template>
-  <section id="myworks" class="grid myworks">
+  <section id="myworks" class="flex myworks">
     <h1 v-scrollanimation class="mywork_title">
       <span class="numbers">02.</span>
       Some Things I've Built
     </h1>
     <div v-scrollanimation class="box-grid">
-      <div class="box" v-for="item in repo" :key="item.id">
+      <div class="box" v-for="item in sliceRepo" :key="item.id">
         <div class="links">
           <svg
             class="folder"
@@ -34,6 +34,9 @@
         </div>
       </div>
     </div>
+    <a v-scrollanimation class="btn" href="https://github.com/FocusThen"
+      >See All</a
+    >
   </section>
 </template>
 
@@ -46,7 +49,7 @@ export default {
   },
   computed: {
     sliceRepo() {
-      return this.repo.slice(0, 8)
+      return this.repo.slice(0, 10)
     },
   },
   created: function () {
@@ -75,8 +78,10 @@ export default {
 .myworks {
   padding: 10em 0;
 }
+.btn {
+  align-self: center;
+}
 .mywork_title {
-  grid-column: 2/6;
   position: relative;
   color: var(--lightclr);
   margin-bottom: 2em;
@@ -151,18 +156,17 @@ export default {
   color: var(--accentclr);
 }
 
-@media (max-width: 768px) {
-  .mywork_title {
-    grid-column: 1/6;
+@media (max-width: 1000px) {
+  .mywork_title::after {
+    width: calc(100% - 450px);
   }
 }
-@media (max-width: 710px) {
+
+@media (max-width: 768px) {
   .box-grid {
     grid-column: 1/9;
   }
-  .mywork_title {
-    grid-column: 1/9;
-  }
+
   .mywork_title::after {
     width: 10%;
   }

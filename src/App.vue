@@ -136,10 +136,27 @@ li {
   text-decoration: none;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  column-gap: 20px;
+.flex {
+  display: flex;
+  max-width: 1350px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+@media (max-width: 1615px) {
+  .flex {
+    max-width: 1150px;
+  }
+}
+@media (max-width: 1470px) {
+  .flex {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1370px) {
+  .flex {
+    max-width: 950px;
+  }
 }
 
 .numbers {
