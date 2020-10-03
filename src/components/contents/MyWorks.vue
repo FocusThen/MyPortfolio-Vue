@@ -94,6 +94,7 @@ export default {
 }
 .box-grid {
   grid-column: 2/8;
+  grid-gap: 1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -102,8 +103,6 @@ export default {
   height: 250px;
   background-color: var(--boxclr);
   border-radius: 5px;
-  margin-right: 1em;
-  margin-bottom: 1em;
   padding: 1.5em;
   transition: all 0.3s;
 }
