@@ -15,9 +15,9 @@
           Shortly after graduating from
           <span class="color-accent">Istanbul Arel University</span>
           , I worked more on
-          <span class="color-accent">JavaScript</span> and i watched a lot front
-          end courses form Scrimba, Frontend Masters ... and more. I'm still
-          learning
+          <span class="color-accent">JavaScript</span> and i watched a lot of
+          front end courses form Scrimba, Frontend Masters ... and more. I'm
+          still learning
         </p>
 
         <ul v-scrollanimation class="skills">
@@ -30,8 +30,10 @@
           <li>Express</li>
         </ul>
       </div>
-      <div v-scrollanimation class="imageme">
-        <img src="../../assets/me.png" alt="thats me!" />
+      <div class="imageme">
+        <div v-scrollanimation>
+          <div class="image overlay"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -48,9 +50,52 @@
   justify-content: space-between;
 }
 
-img {
-  width: 50%;
-  height: auto;
+.image {
+  background-image: url('../../assets/pp.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 12px;
+}
+.image::before {
+  content: '';
+  position: absolute;
+  border: 1px solid var(--accentclr);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 12px;
+  z-index: -1;
+  transform: translate(-25px, 20px);
+  transition: transform 0.3s;
+}
+.image:hover::before {
+  transform: translate(0px, 0px);
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 170, 141, 1);
+  z-index: 1;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+  border-radius: 12px;
+}
+.overlay:hover:after {
+  opacity: 0;
 }
 
 .imageme {
@@ -111,6 +156,17 @@ img {
   .imageme {
     width: 50%;
   }
+  .image {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .image {
+    width: 270px;
+    height: 270px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -131,6 +187,10 @@ img {
 @media (max-width: 575px) {
   .aboutme_title::after {
     display: none;
+  }
+  .image {
+    width: 250px;
+    height: 250px;
   }
 }
 </style>

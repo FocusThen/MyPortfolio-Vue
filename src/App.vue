@@ -28,7 +28,6 @@ import Intro from '@/components/contents/Intro.vue'
 import AboutMe from '@/components/contents/AboutMe.vue'
 import MyWorks from '@/components/contents/MyWorks.vue'
 import Contact from '@/components/contents/Contact.vue'
-// import BuildByMe from "@/components/contents/BuildByMe.vue";
 
 // Layout & fixed
 import Fixed from '@/components/layouts/Fixed.vue'
@@ -46,7 +45,6 @@ export default {
     Header,
     Intro,
     AboutMe,
-    // BuildByMe,
     MyWorks,
     Contact,
     Footer,
