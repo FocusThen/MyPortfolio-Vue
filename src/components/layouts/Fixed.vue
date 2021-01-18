@@ -8,7 +8,7 @@
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/m-m%C3%BCcahit-tezcan/">
+          <a href="https://www.linkedin.com/in/m-mucahit-tezcan/">
             <font-awesome-icon :icon="['fab', 'linkedin-in']" />
           </a>
         </li>
