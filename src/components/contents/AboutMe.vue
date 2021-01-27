@@ -22,12 +22,14 @@
 
         <ul v-scrollanimation class="skills">
           <li>JavaScript (ES6+)</li>
-          <li>Vue</li>
+          <li>TypeScript</li>
+          <li>Vue (2 & 3)</li>
           <li>React</li>
           <li>Node.JS</li>
-          <li>HTML & (S)CSS</li>
           <li>GraphQL</li>
           <li>Express</li>
+          <li>Storybook</li>
+          <li>HTML & (S)CSS</li>
         </ul>
       </div>
       <div class="imageme">
